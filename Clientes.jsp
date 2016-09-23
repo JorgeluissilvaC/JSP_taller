@@ -1,8 +1,27 @@
+<!DOCTYPE html>
 <HTML>
 <head>
+	   <title>Clientes</title>
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <BODY>
+			<nav>
+			      <div  class="nav-wrapper">
+			        <a href="index.jsp" class="brand-logo">Sistema de inventarios</a>
+			        <ul id="nav-mobile" class="right hide-on-med-and-down">
+			          <li><a href="Clientes.jsp">Clientes</a></li>
+			          <li><a href="Compras.jsp">Compras</a></li>
+			          <li><a href="collapsible.html">Ventas</a></li>
+			        </ul>
+			      </div>
+			    </nav>
+			  </body>
                  <%@ page language="java" import="java.sql.*,javax.naming.*,javax.sql.*" %>
                 <%
                try{
@@ -41,8 +60,11 @@
                    out.println("ERROR! "+e.getMessage());
                }      
                 %>
-    <form method="get" action="/index.jsp">
-    <button type="submit"> Regresar </button>
-</form>
+
 </BODY>
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
 </HTML>
